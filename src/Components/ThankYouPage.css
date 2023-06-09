@@ -1,0 +1,68 @@
+.thank-you-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../assets/bg.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .thank-inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .thank-inner-box:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .thank-you-heading {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    animation: headingAnimation 1s ease-in-out;
+  }
+  
+  @keyframes headingAnimation {
+    0% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .thank-you-message {
+    font-size: 26px;
+  }
+  
+  /* Responsive Styles */
+  
+  @media (max-width: 768px) {
+    .thank-you-heading {
+      font-size: 40px;
+    }
+  
+    .thank-you-message {
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .thank-you-heading {
+      font-size: 30px;
+    }
+  
+    .thank-you-message {
+      font-size: 16px;
+    }
+  }
+  
