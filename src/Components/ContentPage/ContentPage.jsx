@@ -1,4 +1,3 @@
-import "./ContentPage.css";
 import RowElement from "./RowElement";
 
 const ContentPage = () => {
@@ -36,13 +35,14 @@ const ContentPage = () => {
   ];
   return (
     
-    <div className="content-page">
-      {data.map((element) => (
+    <div className="flex-col justify-center items-center w-[90%] bg-white m-auto">
+      {data.map((element,index) => (
         <RowElement
           key={element.id}
           title={element.title}
           desc={element.desc}
           avatar={element.avatar}
+          index={index}
         />
       ))}
     </div>
